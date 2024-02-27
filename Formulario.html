@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestión de Farmacia</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<!-- Formulario para ingresar nuevo medicamento -->
+<div class="w3-container">
+  <h2>Ingreso de Nuevo Medicamento</h2>
+  <form id="frmNuevoMedicamento" class="w3-container">
+    <label class="w3-text-blue"><b>Nombre del Medicamento</b></label>
+    <input id="nombreMedicamento" class="w3-input w3-border" type="text" placeholder="Nombre del Medicamento" required>
+    <label class="w3-text-blue"><b>Cantidad en Stock</b></label>
+    <input id="cantidadStock" class="w3-input w3-border" type="number" placeholder="Cantidad en Stock" required>
+    <label class="w3-text-blue"><b>Fecha de Vencimiento</b></label>
+    <input id="fechaVencimiento" class="w3-input w3-border" type="date" required>
+    <button id="btnGuardarMedicamento" class="w3-btn w3-blue">Guardar</button>
+  </form>
+</div>
+
+<!-- Formulario para registrar una nueva venta -->
+<div class="w3-container">
+  <h2>Registro de Nueva Venta</h2>
+  <form id="frmNuevaVenta" class="w3-container">
+    <label class="w3-text-blue"><b>ID del Cliente</b></label>
+    <input id="idCliente" class="w3-input w3-border" type="text" placeholder="ID del Cliente" required>
+    <label class="w3-text-blue"><b>Medicamento</b></label>
+    <select id="medicamento" class="w3-select w3-border" required>
+      <option value="" disabled selected>Elija el Medicamento</option>
+      <!-- Aquí podrías incluir opciones de medicamentos disponibles -->
+    </select>
+    <label class="w3-text-blue"><b>Cantidad</b></label>
+    <input id="cantidadVenta" class="w3-input w3-border" type="number" placeholder="Cantidad" required>
+    <button id="btnRegistrarVenta" class="w3-btn w3-blue">Registrar Venta</button>
+  </form>
+</div>
+
+<!-- Ventana para mostrar el inventario de medicamentos -->
+<div class="w3-container">
+  <h2>Inventario de Medicamentos</h2>
+  <table id="tblInventario" class="w3-table w3-bordered">
+    <tr>
+      <th>Nombre</th>
+      <th>Cantidad en Stock</th>
+      <th>Fecha de Vencimiento</th>
+    </tr>
+    <!-- Aquí se mostrarán dinámicamente los medicamentos del inventario -->
+  </table>
+</div>
+
+<!-- Ventana para mostrar las ventas realizadas -->
+<div class="w3-container">
+  <h2>Ventas Realizadas</h2>
+  <table id="tblVentas" class="w3-table w3-bordered">
+    <tr>
+      <th>ID de Venta</th>
+      <th>ID del Cliente</th>
+      <th>Medicamento</th>
+      <th>Cantidad</th>
+    </tr>
+    <!-- Aquí se mostrarán dinámicamente las ventas realizadas -->
+  </table>
+</div>
+
+<script>
+// Aquí irá el código JavaScript para manejar las interacciones del usuario y la lógica del negocio
+</script>
+
+</body>
+</html>
